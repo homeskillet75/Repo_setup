@@ -1,5 +1,5 @@
 ---
-- name: configure docker logging rotation
+- name: configure spacewalk repo
   hosts: all
   become: yes
   gather_facts: false
