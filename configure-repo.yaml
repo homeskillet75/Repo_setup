@@ -1,0 +1,11 @@
+---
+- name: configure docker logging rotation
+  hosts: all
+  become: yes
+  gather_facts: false
+  vars:
+  tasks:
+    - name: configure repo
+      template:
+        src: spacewalk.repo
+        dest: /etc/yum.repos.d/
