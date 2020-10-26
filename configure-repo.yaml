@@ -1,0 +1,11 @@
+---
+- name: config repo
+  hosts: all
+  gather_facts: false
+  become: yes
+  vars:
+  task:
+    - name: configure repo
+      template:
+        src: spacewalk.repo
+        dest: /etc/yum.repos.d/
