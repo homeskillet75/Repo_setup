@@ -7,5 +7,5 @@
   tasks:
     - name: configure repo
       template:
-        src: spacewalk.repo
+        src: ol7-latest.repo
         dest: /etc/yum.repos.d/
